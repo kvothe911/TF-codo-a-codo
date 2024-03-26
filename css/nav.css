@@ -55,6 +55,7 @@ nav ul li a, nav>a {
     padding: 10px .25rem;
     text-decoration: none;
     color: var(--white-color);
+    font-weight: 600;
 }
 
 nav ul li a:hover {
