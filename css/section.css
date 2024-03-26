@@ -1,21 +1,98 @@
-section {
+
+/*-----ABOUT US------*/
+
+.about {
     position: relative;
+    top: 4px;       /*corrige un pequeño hueco que habia sobre el divisor rosa*/
     background-color: var(--lightpink-color);
     margin: 0;
     padding-top: 100px;
 }
 
-section h3{
+.about h3{
     font-family: helvetica, arial;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
 }
 
-section .highlight {
+.about .highlight {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    font-size: 80px; /* Tamaño de fuente más grande */
+    font-size: 60px; /* Tamaño de fuente más grande */
     background-color: var(--green-color); /* Color de fondo verde */
+}
+
+.about .frame_art {
+    margin: 100px auto 0;
+    width: 90%;
+    display: block;
+    
+}
+
+.about .about_description {
+    margin: 50px auto 0;
+    width: 80%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about .divisor_rosa {
+    position: relative;
+    bottom: 0;
+    margin: 100px 0 0 0;
+    height: auto;
+}
+
+/*------PARTNERS------*/
+
+.partners {
+    position: relative;
+    background-color: var(--pink-color);
+    margin: 0;
+    padding-top: 100px;
+    width: 100vw;
+}
+
+.partners h4 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 800;
+    font-family: helvetica, arial;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.partners .partners_img {
+    margin: 100px 4rem 0px 4rem;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners .partners_img a img{
+    height: 50px;
+}
+
+/*------The Experience----*/
+
+.experience {
+    position: relative;
+    background-color: var(--blue-color);
+    margin: 0;
+    padding-top: 150px;
+    padding-left: 10rem;
+    padding-bottom: 75px;
+    width: 100vw;
+}
+
+.experience h4 {
+    margin: 0;
+    font-size: 76px;
+    font-weight: 800;
+    font-family: helvetica, arial;
+    color: var(--white-color);
 }
