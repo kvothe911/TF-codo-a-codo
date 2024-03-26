@@ -1,0 +1,71 @@
+header {
+    background-color: transparent;
+    padding: 2vh 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /*-------imagen del logo-------*/
+
+nav a .logo {             
+    height: 50px;
+    margin-left: 2rem;
+    background-size: contain;
+}
+
+nav a .logo:hover{
+    background-image: url(../img/logo_3.png);
+}
+
+
+     /*-------menu del medio------*/
+
+nav ul {                
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a, nav>a {
+    display: block;
+    padding: 10px .25rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+nav ul li a:hover {
+    color: var(--pink-color);
+}
+
+    /*------menu redes sociales------*/
+
+nav .social-links {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+nav .social-links a img {
+    margin-left: 1rem;
+    height: 2.2rem;
+    padding: 0;
+}

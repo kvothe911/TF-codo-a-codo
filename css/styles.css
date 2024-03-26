@@ -1,0 +1,28 @@
+:root{
+    --lightblue-color: #00FFFF;
+    --white-color: #FFFFF7;
+    --black-color: #1C1616;
+    --pink-color: #FF34CD;
+    --lightpink-color: #EECCE7;
+    --green-color: #CDFB51;
+    --blue-color: #71A0D3;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+/*------Establezco el color del background de la pagina de inicio-------*/
+
+.background{
+    background-color: var(--blue-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;     /*utiliza el 100% del alto del viewport*/
+    width: 100%;        /*se ajusta en ancho*/
+    position: fixed;    /*dejo el fondo fijo*/
+    z-index: -1;        /*lo ubico una capa detras para que se pueda ver el contenido*/
+}
