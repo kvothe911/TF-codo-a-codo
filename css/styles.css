@@ -6,6 +6,8 @@
     --lightpink-color: #EECCE7;
     --green-color: #CDFB51;
     --blue-color: #71A0D3;
+    --primary-font: "Montserrat", sans-serif;
+    --secondary-font: Helvetica ,Arial, sans-serif;
 }
  
 html,body {
