@@ -104,7 +104,7 @@
 
 .experience-left {
     position: relative;
-    background-color: var(--white-color);
+    background-color: var(--white-color); 
     margin: 0;
     padding-top: 1px;
     width: 100vw;
