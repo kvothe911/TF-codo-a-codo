@@ -73,8 +73,14 @@
     justify-content: space-between;
 }
 
-.partners .partners_img a img{
-    height: 50px;
+.partners .partners_img img{
+    height: 70px;
+    width: auto;
+}
+
+.partners .partners_img img:last-child{
+    height: 130px;
+    width: auto;
 }
 
 /*------The Experience----*/
@@ -277,6 +283,8 @@
   }
   
 .community .sidebar {
+    position: relative;
+    z-index: 100;
     width: 50%;
     box-sizing: border-box;
     font-weight: 700;
