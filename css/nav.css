@@ -7,7 +7,7 @@ header {
     margin: 0;
     padding: 0;
     width: 100vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.181); /*sombreado bajo el header*/
+    box-shadow: 0 3px 20px rgba(230, 230, 230, 0.542); /*sombreado bajo el header*/
     z-index: 100;
 }
  
@@ -56,11 +56,11 @@ nav ul li a, nav>a {
     padding: 10px .25rem;
     text-decoration: none;
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 nav ul li a:hover {
-    color: var(--pink-color);
+    color: var(--black-color);
 }
 
     /*------menu redes sociales------*/

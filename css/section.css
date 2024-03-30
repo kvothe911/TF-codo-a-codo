@@ -4,7 +4,8 @@
 .about {
     position: relative;
     top: 4px;       /*corrige un pequeño hueco que habia sobre el divisor rosa*/
-    background-color: var(--lightpink-color);
+    /*background-color: var(--lightpink-color);*/
+    background: linear-gradient(to bottom, #b9ddff00 0%, var(--lightpink-color) 15%, var(--lightpink-color));
     margin: 0;
     padding-top: 100px;
 }
@@ -34,8 +35,8 @@
 .about .about_description {
     margin: 50px auto 0;
     width: 80%;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -87,7 +88,8 @@
 
 .experience {
     position: relative;
-    background-color: var(--blue-color);
+    background: linear-gradient(to bottom, var(--blue-color), var(--blue-color) 90%, var(--white-color) );
+    /*background-color: var(--blue-color);*/
     margin: 0;
     padding-top: 150px;
     padding-left: 7rem;
@@ -125,16 +127,18 @@
 
 .experience-left h3{
     font-family: var(--secondaty-font);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
     margin-top: 100px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .experience-left p {
     font-family: var(--secondaty-font);
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-top: 0;
 }
 
 .experience-left .expresion {
@@ -155,9 +159,10 @@
 
 .experience-right{
     position: relative;
-    background-color: var(--lightpink-color);
+    background: linear-gradient(to bottom, var(--white-color)0%, var(--lightpink-color) 10%,var(--lightpink-color) 90%, var(--white-color));
     margin: 0;
     padding-top: 1px;
+    padding-bottom: 15px;
     width: 100vw;
     display: flex;
 }
@@ -177,17 +182,18 @@
 
 .experience-right h3{
     font-family: var(--secondaty-font);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
     margin-top: 100px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .experience-right p {
     font-family: var(--secondaty-font);
     font-size: 30px;
-    font-weight: 600;
-    text-align: right;
+    font-weight: 700;
+    margin-top: 0;
 }
 
 .experience-right .expresion {
@@ -218,9 +224,9 @@
 
 .community p{
     margin-left: 7rem;
-
     color: var(--white-color);
     font-size: 32px;
+    font-weight: 700;
     width: 80%;
 }
 
@@ -307,7 +313,7 @@
 .contact .content {
     position: relative;
     display: flex;
-    background-color: var(--lightpink-color);
+    background:linear-gradient(to bottom, #eecce700, var(--lightpink-color) 5%);
     margin: 0;
     padding-left: 7rem;
     padding-right: 7rem;
@@ -327,8 +333,8 @@
 }
 
 .contact .sidebar p {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     margin-right: 3rem;
 }
 
@@ -351,6 +357,7 @@
     margin-bottom: 5px;
     color: var(--black-color);
     font-weight: 600;
+    font-size: 20px;
 }
 
 .contact input[type="text"],
@@ -371,7 +378,7 @@
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
-    border: solid 2px var(--black-color);
+    border: none;
     border-radius: 10px;
     background-color: #e5bedc;
     font-size: 16px;
@@ -416,7 +423,7 @@
     border-radius: 25px;
     border: none;
     padding: 15px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     background-color: var(--green-color);
     color: var(--black-color);
@@ -441,6 +448,7 @@ footer{
     top: -4px;
     margin: 0;
     padding-top: 80px;
+    padding-bottom: 50px;
     margin-bottom: -4px;
     background-color: var(--pink-color);
     width: 100vw;
@@ -467,7 +475,8 @@ footer .container .social {
 footer .container .social p {
     margin: 0 auto;
     color: var(--white-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 footer .social-links {
@@ -497,7 +506,8 @@ footer .container .contact-us {
 footer .contact-us span {
     margin: 0 auto;
     color: var(--white-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 

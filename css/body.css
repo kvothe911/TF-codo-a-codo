@@ -63,6 +63,7 @@
 
 .brand h2 {
     color: var(--white-color);
+    font-size: 30px;
 }
 
 .brand .identity a {
@@ -70,6 +71,7 @@
     top: 120%;
     text-decoration: none;
     font-weight: 700;
+    font-size: 20px;
     color: var(--black-color);
     background-color: var(--green-color);
     padding: 10px 20px;
