@@ -21,7 +21,7 @@ html,body {
 /*------Establezco el color del background de la pagina de inicio-------*/
 
 .background{
-    background: linear-gradient(to bottom, var(--blue-color), #b9ddff);
+    background: linear-gradient(to bottom, var(--blue-color) 80%, #beddf9);
     margin: 0;
     padding: 0;
     height: 100vh;     /*utiliza el 100% del alto del viewport*/
