@@ -3,15 +3,13 @@ header {
     background-color: var(--blue-color);  /*puede ser transparent..*/
     padding: 2vh 0;
     top: 0;
-    left: 0;
     margin: 0;
     padding: 0;
     width: 100vw;
-    box-shadow: 0 3px 20px rgba(230, 230, 230, 0.542); /*sombreado bajo el header*/
     z-index: 100;
 }
  
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,39 +17,39 @@ nav {
 
     /*-------imagen del logo-------*/
 
-nav a .logo {             
+    header nav a .logo {             
     height: 50px;
     margin-left: 2rem;
     background-size: cover;
 }
 
-nav a .logo:hover{
+header nav a .logo:hover{
     background-image: url(../img/logo_3.png);
 }
 
 
      /*-------menu del medio------*/
 
-nav ul {                
+     header nav ul {                
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin-right: 1rem;
 }
 
-nav ul li:first-child {
+header nav ul li:first-child {
     margin-left: 0;
 }
 
-nav ul li:last-child {
+header nav ul li:last-child {
     margin-right: 0;
 }
 
-nav ul li a, nav>a {
+header nav ul li a, nav>a {
     display: block;
     padding: 10px .25rem;
     text-decoration: none;
@@ -59,26 +57,234 @@ nav ul li a, nav>a {
     font-weight: 700;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: var(--black-color);
 }
 
     /*------menu redes sociales------*/
 
-nav .social-links {
+    header nav .social-links {
     display: inline-block;
     margin-right: 4rem;
 }
 
-nav .social-links a {
+header nav .social-links a {
     margin-left: 2.5rem;
 }
 
-nav .social-links a i {
+header nav .social-links a i {
     color: var(--white-color);
     font-size: 22px;
 }
 
-nav .social-links a i:hover {
+header nav .social-links a i:hover {
     color: var(--pink-color);
+}
+
+header .menu-btn {
+    display: none;
+}
+
+
+
+
+/*----- ESTILOS EN RESOLUCION < 1200------*/
+
+@media screen and (max-width: 1200px) {
+    header {
+        height: 100%;
+        width: 0;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: 0 0px 0px rgba(230, 230, 230, 0);
+    }
+
+    header .menu-btn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: var(--white-color);
+        height: 45px;
+        width: 45px;
+        z-index: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+
+    header .menu-btn i {
+        position: absolute;
+        font-size: 30px;
+        transition: all .3s ease;
+    }
+
+    header .menu-btn i.fa-xmark {
+        opacity: 0;
+    }
+
+    #btn:checked ~ .menu-btn i.fa-xmark {
+        opacity: 1;
+        transform: rotate(-180deg);
+    }
+
+    #btn:checked ~ .menu-btn i.fa-bars {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+
+    #head-sidebar {
+        position: fixed;
+        background: transparent;
+        height: 100%;
+        width: 300px;
+        overflow: hidden;
+        right: -300px;
+        transition: all .3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn:checked ~ #head-sidebar {
+        right: 0px;
+        background: var(--pink-color);
+    }
+
+    #head-sidebar>a {
+        position: fixed;
+        background: transparent;
+        top: 10px;
+        left: 30px;
+    }
+
+    #head-sidebar ul {
+        position: relative;
+        top: 75px;
+        left: -20px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #head-sidebar .social-links {
+        position: absolute;
+        width: 100%;
+        left: 40px;
+        bottom: 50px;
+    }
+
+    #head-sidebar .social-links a i:hover {
+        color: var(--green-color);
+    }
+}
+
+
+/*----- ESTILOS EN RESOLUCION < 577 a 320------*/
+
+@media screen and (max-width: 577px) {
+    header {
+        height: 100%;
+        width: 0;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: 0 0px 0px rgba(230, 230, 230, 0);
+    }
+
+    header .menu-btn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: var(--white-color);
+        height: 45px;
+        width: 45px;
+        z-index: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+
+    header .menu-btn i {
+        position: absolute;
+        font-size: 30px;
+        transition: all .3s ease;
+    }
+
+    header .menu-btn i.fa-xmark {
+        opacity: 0;
+    }
+
+    #btn:checked ~ .menu-btn i.fa-xmark {
+        opacity: 1;
+        transform: rotate(-180deg);
+    }
+
+    #btn:checked ~ .menu-btn i.fa-bars {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+
+    #head-sidebar {
+        position: fixed;
+        background: transparent;
+        height: 100%;
+        width: 100vw;
+        overflow: hidden;
+        right: -600px;
+        transition: all .3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn:checked ~ #head-sidebar {
+        right: 0px;
+        background: var(--pink-color);
+    }
+
+    #head-sidebar>a {
+        position: fixed;
+        background: transparent;
+        top: 10px;
+        left: 30px;
+        transition: all .3s ease;
+        width: 70%;
+        
+    }
+
+    #head-sidebar>a img{
+        width: 70%;
+        height: auto;
+        padding: 0;
+    }
+
+    #btn:checked ~ #head-sidebar>a {
+        left: -600px;
+    }
+
+    #head-sidebar ul {
+        position: absolute;
+        top: 75px;
+        left: 30px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #head-sidebar .social-links {
+        position: absolute;
+        width: 100%;
+        left: 40px;
+        bottom: 50px;
+        justify-content: center;
+    }
+
+    #head-sidebar .social-links a i:hover {
+        color: var(--green-color);
+    }
 }
