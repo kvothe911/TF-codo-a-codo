@@ -19,6 +19,7 @@
     top: 30%;
     left: 50%;
     height: 150px;
+    animation: moverNube 60s linear infinite alternate; /* Aplicar la animación */
 }
 
 .nubes .nube2 {
@@ -26,13 +27,15 @@
     top: 40%;
     left: 60%;
     height: 120px;
+    animation: moverNube 60s linear infinite alternate; /* Aplicar la animación */
 }
 
 .nubes .nube3 {
     position: fixed;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     height: 150px;
+    animation: moverNube 60s linear infinite alternate; /* Aplicar la animación */
 }
 
 .nubes .nube4 {
@@ -40,6 +43,16 @@
     bottom: 5%;
     right: 0;
     height: 150px;
+    animation: moverNube 40s linear infinite alternate; /* Aplicar la animación */
+}
+
+@keyframes moverNube {
+    0% {
+        transform: translateX(-200px); /* Mover la nube 200px a la izquierda */
+    }
+    100% {
+        transform: translateX(200px); /* Mover la nube 200px a la derecha */
+    }
 }
 
 .brand {
