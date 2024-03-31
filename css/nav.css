@@ -51,10 +51,11 @@ header nav ul li:last-child {
 
 header nav ul li a, nav>a {
     display: block;
-    padding: 10px .25rem;
+    padding: 10px 1.2rem;
     text-decoration: none;
     color: var(--white-color);
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 header nav ul li a:hover {
