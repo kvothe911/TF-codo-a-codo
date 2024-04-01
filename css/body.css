@@ -79,6 +79,8 @@
     font-size: 30px;
 }
 
+/*cambie el color de la font on hover a blanco, y aumente padding del boton*/
+
 .brand .identity a {
     position: absolute;
     top: 120%;
@@ -96,4 +98,5 @@
     color: var(--white-color);
     background-color: var(--pink-color);
 }
+
 
