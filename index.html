@@ -68,7 +68,7 @@
 
     <section id="about" class="about">
         <h3>KOMBUCHAN IS NOT JUST A BEVERAGE;</h3>
-        <h3 class="highlight">IT'S A LIFESTYLE.</h3>
+        <h4 class="highlight">IT'S A LIFESTYLE.</h4>
         <img class="frame_art" src="./img/Frame1.svg" alt="">
         <p class="about_description">Rooted in the belief that life should be lived vibrantly and passionately,
             Kombuchan offers more than just a refreshing drink. It's a gateway to a community that celebrates
@@ -76,15 +76,17 @@
         <img class="divisor_rosa" src="./img/divisor_rosa.svg" alt="">
     </section>
     <section id="partners" class="partners">
-        <h4>OUR PARTNERS</h4>
-        <div class="partners_img">
-            <img src="./img/logo-casa-bonay.svg" alt="casa bonay">
-            <img src="./img/logo-ps.svg" alt="ps">
-            <img src="./img/logo-quicksilver.svg" alt="quicksilver">
-            <img src="./img/logo-sonar.svg" alt="sonar">
-            <img src="./img/logo-two-schmucks.svg" alt="two schmucks">
-            <img src="./img/logo-vans.svg" alt="vans">
-        </div>
+        <article class="wrapper">
+            <h4>OUR PARTNERS</h4>
+            <div class="partners_img">
+                <img class="partners_logo" src="./img/logo-casa-bonay.svg" alt="casa bonay">
+                <img class="partners_logo" src="./img/logo-ps.svg" alt="ps">
+                <img class="partners_logo" src="./img/logo-quicksilver.svg" alt="quicksilver">
+                <img class="partners_logo" src="./img/logo-sonar.svg" alt="sonar">
+                <img class="partners_logo" src="./img/logo-two-schmucks.svg" alt="two schmucks">
+                <img class="partners_logo" src="./img/logo-vans.svg" alt="vans">
+            </div>
+        </article>
     </section>
     <section id="experience" class="experience">
         <h4>THE KOMBUCHAN</h4>
@@ -92,8 +94,8 @@
     </section>
     <section id="experience-left" class="experience-left">
         <article class="text">
-            <h3>ARTISTIC</h3>
-            <h3 class="expresion">EXPRESION</h3>
+            <h3>ARTISTIC EXPRESSION</h3>
+            <!-- <h3 class="expresion">EXPRESION</h3> -->
             <P>Kombuchan believes in the power of creativity to inspire and connect. As part of the Kombuchan community,
                 members have access to free art events, workshops, and exhibitions. From street art showcases to
                 collaborative mural projects, Kombuchan supports artists and encourages artistic exploration.</P>
@@ -104,8 +106,8 @@
     <section id="experience-right" class="experience-right">
         <img src="./img/experience-right.svg" alt="">
         <article class="text">
-            <h3>MUSICAL</h3>
-            <h3 class="expresion">JOURNEYS</h3>
+            <h3>MUSICAL JOURNEYS</h3>
+            <!-- <h3 class="expresion">JOURNEYS</h3> -->
             <P>Music is the heartbeat of Kombuchan. Members can immerse themselves in a diverse range of musical
                 experiences, from intimate acoustic sets to electrifying live performances. Kombuchan sponsors free
                 concerts, music festivals, and DJ nights, fostering a vibrant music scene that celebrates diversity and
@@ -115,8 +117,8 @@
 
     <section id="experience-left" class="experience-left">
         <article class="text">
-            <h3>SKATE & </h3>
-            <h3 class="expresion">SURF</h3>
+            <h3>SKATE & SURF</h3>
+            <!-- <h3 class="expresion">SURF</h3> -->
             <P>Kombuchan embraces the spirit of adventure and the thrill of the outdoors. Skating and surfing are more
                 than
                 just activities; they're ways of life. Kombuchan sponsors free skateboarding and surfing events,
@@ -141,21 +143,23 @@
 
             <form action="#">
                 <div class="form-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Name *</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <button type="submit">Join now!</button>
             </form>
 
-            <div class="sidebar">
-                <p>WHERE CULTURE</p>
+            <div class="community-right">
+               <!--  <p>WHERE CULTURE</p>
                 <p class="highlight">FLOWS</p>
                 <p>AND COMMUNITY</p>
-                <p class="highlight">GROWS</p>
+                <p class="highlight">GROWS</p> -->
+                <h4>WHERE CULTURE <br><span class="highlight">FLOWS</span></h4>
+                <h4>AND COMMUNITY <br><span class="highlight">GROWS</span></h4>
             </div>
 
         </div>
@@ -165,7 +169,7 @@
 
         <div class="content">
 
-            <div class="sidebar">
+            <div class="contact-left">
                 <h3>CONTACT US</h3>
                 <p>Got a question, suggestion, or just want to say hello? We'd love to hear from you!</p>
                 <img src="./img/a-hipster-skater.svg" alt="img">
@@ -173,15 +177,15 @@
 
             <form action="#" >
                 <div class="form-group">
-                  <label for="name">Name:</label>
+                  <label for="name">Name *</label>
                   <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email:</label>
+                  <label for="email">Email *</label>
                   <input type="email" id="email" name="email" required>
                 </div>
                 <div class="reason-box">
-                  <label for="reason">Reason for contact:</label>
+                  <label for="reason">Reason for contact *</label>
                   <select name="reason" id="reason" required>
                     <option value="General Inquiry" selected>General Inquiry</option>
                     <option value="Technical Support">Technical Support</option>
@@ -191,7 +195,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="message">Message:</label>
+                  <label for="message">Message *</label>
                   <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <div class="check">
@@ -199,13 +203,15 @@
                   <label for="receiveContent">I want to receive additional content.</label>
                 </div>
                 <button type="submit">Send</button>
-              </form>  
+            </form>  
         </div>
         <img src="./img/divisor_rosa_2.svg" alt="">
     </section>
     <footer>
-        <div class="container">
+        <div class="container-left">
             <img src="./img/logo_2.png" alt="Kombuchan">
+        </div>
+        <div class="container-right">
             <div class="social">
                 <p>Stay connected</p>
                 <div class="social-links">
@@ -215,7 +221,7 @@
                 </div>
             </div>
             <div class="contact-us">
-                <span>Contact us</span>
+                <h5>Contact us</h5>
                 <div class="contact">
                     <ul>
                         <li>
