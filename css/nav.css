@@ -103,9 +103,14 @@ header .menu-btn {
 
     header .menu-btn {
         position: absolute;
-        right: 20px;
         top: 10px;
+
+         right: -40px;
         color: var(--white-color);
+        padding-right: 50px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        background-color: #FF34CD;
         height: 45px;
         width: 45px;
         z-index: 500;
@@ -154,6 +159,7 @@ header .menu-btn {
     }
 
     #head-sidebar>a {
+        display: none;  /*retiro el logo*/
         position: fixed;
         background: transparent;
         top: 10px;
@@ -197,9 +203,13 @@ header .menu-btn {
 
     header .menu-btn {
         position: absolute;
-        right: 20px;
         top: 10px;
+        right: -40px;
         color: var(--white-color);
+        padding-right: 50px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        background-color: #FF34CD;
         height: 45px;
         width: 45px;
         z-index: 500;
