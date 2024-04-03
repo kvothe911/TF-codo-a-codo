@@ -158,8 +158,7 @@ header .menu-btn {
         background: var(--pink-color);
     }
 
-    #head-sidebar>a {
-        display: none;  /*retiro el logo*/
+    #head-sidebar>a img {
         position: fixed;
         background: transparent;
         top: 10px;
@@ -167,9 +166,9 @@ header .menu-btn {
     }
 
     #head-sidebar ul {
-        position: relative;
+        position: absolute;
         top: 75px;
-        left: -20px;
+        left: 30px;
         font-size: 24px;
         display: flex;
         flex-direction: column;
@@ -179,8 +178,13 @@ header .menu-btn {
     #head-sidebar .social-links {
         position: absolute;
         width: 100%;
-        left: 40px;
+        display: flex;
+        justify-content: center;
         bottom: 50px;
+    }
+
+    #head-sidebar .social-links a {
+        padding: 0 10px;
     }
 
     #head-sidebar .social-links a i:hover {
@@ -257,7 +261,7 @@ header .menu-btn {
         background: var(--pink-color);
     }
 
-    #head-sidebar>a {
+    #head-sidebar>a{
         position: fixed;
         background: transparent;
         top: 10px;
@@ -268,13 +272,14 @@ header .menu-btn {
     }
 
     #head-sidebar>a img{
-        width: 70%;
+        width: 60%;
+        max-width: 200px;
         height: auto;
         padding: 0;
     }
 
     #btn:checked ~ #head-sidebar>a {
-        left: -600px;
+        display: none;
     }
 
     #head-sidebar ul {
@@ -290,9 +295,13 @@ header .menu-btn {
     #head-sidebar .social-links {
         position: absolute;
         width: 100%;
-        left: 40px;
-        bottom: 50px;
+        display: flex;
         justify-content: center;
+        bottom: 50px;
+    }
+
+    #head-sidebar .social-links a {
+        padding: 0 10px;
     }
 
     #head-sidebar .social-links a i:hover {

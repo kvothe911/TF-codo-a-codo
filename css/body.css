@@ -99,16 +99,18 @@
     left: 10%;
 }
 
-.brand img {
-    position: relative;
-    height: 150px;
-}
-
-.brand h2 {
+.brand h1 {
     position: relative;
     color: var(--white-color);
-    font-size: 30px;
+    font-size: 40px;
+    
 }
+
+.brand h1 span {
+    font-size: 80px;
+    font-weight: 800;
+}
+
 
 /*cambie el color de la font on hover a blanco, y aumente padding del boton*/
 
@@ -146,19 +148,23 @@
         flex-direction: column;
         align-items: center;
         left: auto;
-        top: 2%;
+        top: 10%;
     }
 
-    .brand img {
-        width: 50%;
-        min-width: 250px;
-        height: auto;
-    }
-
-    .brand h2 {
+    .brand h1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         position: relative;
-        margin-top: 5px;
-        font-size: max(3vw, 15px);
+        margin-top: 10px;
+        font-size: max(3vw, 20px);
+    }
+
+    .brand h1 span {
+        position: relative;
+        margin-top: 0px;
+        font-size: max(6vw, 55px);
     }
 
     .brand .identity a {
@@ -173,17 +179,11 @@
     .container .lata {
         top: 15%;
         left: auto;
-        height: 85%;
+        max-width: 900px;
+        min-width: 500px;
+        height: 80vh;
+        width: auto;
+        object-fit: contain;
         align-items: center;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .brand .identity img{
-        top: 6%;
-    }
-
-    .brand h2 {
-        top: 6%;
     }
 }
