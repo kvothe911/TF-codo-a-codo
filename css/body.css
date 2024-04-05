@@ -109,6 +109,12 @@
 .brand h1 span {
     font-size: 80px;
     font-weight: 800;
+    color: rgb(255, 68, 0);
+    text-shadow: 
+            1px 1px 0 #fff, /* Top-izquierda */
+            -1px -1px 0 #fff, /* Abajo-derecha */
+            1px -1px 0 #fff, /* Top-derecha */
+            -1px 1px 0 #fff; /* Abajo-izquierda */
 }
 
 
