@@ -30,7 +30,7 @@ header nav a .logo:hover{
 
      /*-------menu del medio------*/
 
-     header nav ul {                
+header nav ul {                
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -64,7 +64,7 @@ header nav ul li a:hover {
 
     /*------menu redes sociales------*/
 
-    header nav .social-links {
+header nav .social-links {
     display: inline-block;
     margin-right: 4rem;
 }
@@ -105,7 +105,7 @@ header .menu-btn {
         position: absolute;
         top: 10px;
 
-         right: -40px;
+        right: -40px;
         color: var(--white-color);
         padding-right: 50px;
         border: 2px solid transparent;
