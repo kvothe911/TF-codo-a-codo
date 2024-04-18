@@ -1,0 +1,54 @@
+
+          /*  HERO  */
+
+@media screen and (max-width: 870px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .brand .identity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: auto;
+        top: 10%;
+    }
+
+    .brand h1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 10px;
+        font-size: max(3vw, 20px);
+    }
+
+    .brand h1 span {
+        position: relative;
+        margin-top: 0px;
+        font-size: max(10vw, 55px);
+    }
+
+    .brand .identity a {
+        top: 80%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .lata {
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 900px;
+        min-width: 500px;
+        height: 80vh;
+        width: auto;
+        object-fit: contain;
+        align-items: center;
+    }
+}
