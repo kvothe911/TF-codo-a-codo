@@ -17,14 +17,19 @@ header nav {
 
     /*-------imagen del logo-------*/
 
-    header nav a .logo {             
+    header nav a .logo {            
     height: 50px;
     margin-left: 2rem;
     background-size: cover;
+    padding-right: 5px;
 }
 
 header nav a .logo:hover{
-    background-image: url(../img/logo_3.png);
+    background-image: url(../img/logo_negro.svg);
+    background-position: 5px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 5px;
 }
 
 
