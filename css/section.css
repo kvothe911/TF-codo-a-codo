@@ -134,7 +134,8 @@ main{
     font-size: 8rem;
     font-weight: 900;
     font-family: var(--secondary-font);
-    text-align: left;
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 0;
     color: var(--white-color);
@@ -158,6 +159,10 @@ main{
 
 .logos-left img:last-child {
     margin-right: 4rem;
+}
+
+.logos-right img:first-child {
+    height: 10rem;
 }
 
 .logos-left{
@@ -216,22 +221,22 @@ main{
     }
 
 
-.logos-left{
-    width: 100%;
-    padding-right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+    .logos-left{
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.logos-right{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+    .logos-right{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -369,7 +374,7 @@ main{
     text-align: left;
 }
 
-@media only screen and (min-width: 990px) and (max-width: 1400px){
+@media only screen and (min-width: 990px) and (max-width: 1600px){
 
     .experience {
         padding-top: 50px;
@@ -591,12 +596,12 @@ main{
 @media only screen and  (max-width: 990px){
 
     .community h3{
-        font-size: 5rem;
+        font-size: 4.5rem;
         text-align: left;
     }
 
     .community .wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 1rem;
     }
 
@@ -606,6 +611,7 @@ main{
         flex-direction: column;
         align-items: center;
         padding: 0;
+        padding-top: 30px;
         width: 90vw;
     }
 
@@ -660,6 +666,7 @@ main{
     margin: 0;
     font-size: 80px;
     font-weight: 900;
+    font-family: var(--secondary-font);
 }
 
 .contact-left p{

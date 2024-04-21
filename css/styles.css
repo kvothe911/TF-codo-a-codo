@@ -32,3 +32,7 @@ html,body {
     position: fixed;    /*dejo el fondo fijo*/
     z-index: -10;        /*lo ubico una capa detras para que se pueda ver el contenido*/
 }
+
+body {
+    position: relative;
+}
