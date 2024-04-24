@@ -30,7 +30,7 @@ header nav {
 }
 
 header nav a .logo:hover{
-    background-image: url(../img/logo_negro.svg);
+    background-image: url(../img/logo_rosa.svg);
     background-position: 6px 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,6 +60,7 @@ header nav ul li:last-child {
 }
 
 header nav ul li a, nav>a {
+    position: relative;
     display: block;
     padding: 10px 1.2rem;
     text-decoration: none;
@@ -68,9 +69,61 @@ header nav ul li a, nav>a {
     font-weight: 600;
 }
 
-header nav ul li a:hover {
+header nav ul li a{
+    position: relative;
+    z-index: 101;
+}
+
+header nav ul li a {
+    transition: all .2s ease;
+}
+
+header nav ul li a:hover{
     color: var(--black-color);
+    z-index: 101;
     cursor: pointer;
+}
+
+header nav ul li a::before {
+    content: ''; /* Añadir contenido al pseudoelemento */
+    position: absolute; /* Posición absoluta para que se ajuste al texto */
+    left: 0; /* Iniciar desde la izquierda */
+    top: 20px;
+    width: 0; /* Comenzar sin ancho */
+    height: 0px; /* Altura del subrayado */
+    background-color: var(--green-color); /* Color del subrayado */
+    transition: width 0.3s ease, height .3s ease, top 0.3s ease; /* Transición suave para el cambio de ancho */
+    opacity: 0;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+header nav ul li a:hover::before {
+    width: 100%; /* Expandir el subrayado de izquierda a derecha */
+    opacity: 1;
+    height: 40px;
+    top: 0;
+}
+
+header nav ul li a::after {
+    content: ''; /* Añadir contenido al pseudoelemento */
+    position: absolute; /* Posición absoluta para que se ajuste al texto */
+    right: 0; /* Iniciar desde la izquierda */
+    top: 20px;
+    width: 100%; /* Comenzar sin ancho */
+    height: 0px; /* Altura del subrayado */
+    background-color: transparent; /* Color del subrayado */
+    transition: width 0.3s ease, background-color .3s ease, top .2s ease, height .2s ease; /* Transición suave para el cambio de ancho */
+    opacity: 1;
+    border-radius: 25px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Expandir el subrayado de izquierda a derecha */
+    opacity: 0;
+    background-color: var(--green-color);
+    top: 0;
+    height: 40px;
 }
 
     /*------menu redes sociales------*/
@@ -81,17 +134,20 @@ header nav .social-links {
 }
 
 header nav .social-links a {
-    margin-left: 2.5rem;
+    margin: 0 1.5rem;
 }
 
 header nav .social-links a i {
+    display: inline-flex;
     color: var(--white-color);
     font-size: 22px;
+    transition: transform .1s ease;
 }
 
 header nav .social-links a i:hover {
     color: var(--pink-color);
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 header .menu-btn {
@@ -180,18 +236,20 @@ header .menu-btn {
         padding-bottom: 20px;
         top: 0px;
         left: 0px;
-        transition: all .3s ease;
-    }
+    } 
     
     #btn:checked ~ #head-sidebar>a {
-        /* top: -20vh; */
+        position: relative;
         left: auto;
         right: 0;
         padding-right: 70px;
         padding-left: 0;
         padding-bottom: 0;
         background-color: var(--pink-color);
-    }
+    } 
+
+
+
 
     header nav a .logo:hover{
         padding-right: 6px;

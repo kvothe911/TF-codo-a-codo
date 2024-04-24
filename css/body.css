@@ -124,6 +124,8 @@
 .brand .identity a {
     position: absolute;
     top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -132,19 +134,44 @@
     padding: 18px 36px;
     border: none;
     border-radius: 40px;
+    max-width: 200px;
+    max-height: 60px;
+    transition: color .2s ease, font-size .2s ease, background-color .2s ease;
 }
 
 .brand a:hover {
     color: var(--white-color);
     background-color: var(--pink-color);
+    font-size: 21px;
 }
 
 .container .lata {
     position: absolute;
+    width: 100%;
     top: 100px;
-    right: 0px;
+    right: 25vw;
+    transform: translateX(45%);
     height: 80vh;
     width: auto;
     z-index: 100;
 }
 
+/* Estilo para la barra de desplazamiento lateral en navegadores Webkit */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--blue-color); /* Color de fondo de la pista de la barra de desplazamiento */
+    cursor: default;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--green-color); /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Radio de borde para la barra de desplazamiento */
+    cursor: default;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green-color); /* Color de la barra de desplazamiento al hacer hover */
+  }
