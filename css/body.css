@@ -22,8 +22,8 @@
 
 .nubes .nube1 {
     position: fixed;
-    top: 30%;
-    left: 50%;
+    top: 20%;
+    left: 20%;
     height: 150px;
     animation: moverNube1 60s linear infinite alternate; /* Aplicar la animación */
 }
@@ -33,13 +33,13 @@
         transform: translateX(-250px); /* Mover la nube 200px a la izquierda */
     }
     100% {
-        transform: translateX(600px); /* Mover la nube 200px a la derecha */
+        transform: translateX(1600px); /* Mover la nube 200px a la derecha */
     }
 }
 
 .nubes .nube2 {
     position: fixed;
-    top: 40%;
+    top: 45%;
     left: 60%;
     height: 120px;
     animation: moverNube2 60s linear infinite alternate; /* Aplicar la animación */
@@ -114,8 +114,8 @@
 
 .brand h1 span {
     font-size: 80px;
-    font-weight: 800;
-    color: var(--white-color)
+    font-family: 'Montserrat-semi';
+    color: var(--green-color)
 }
 
 
@@ -128,7 +128,7 @@
     transform: translate(-50%, -50%);
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     color: var(--black-color);
     background-color: var(--green-color);
     padding: 18px 36px;
@@ -142,7 +142,7 @@
 .brand a:hover {
     color: var(--white-color);
     background-color: var(--pink-color);
-    font-size: 21px;
+    font-size: 23px;
 }
 
 .container .lata {

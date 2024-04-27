@@ -26,8 +26,9 @@
     }
 
     .brand h1 span {
-        display: none;
+        /* display: none; */
         position: relative;
+        color: var(--green-color);
         margin-top: 0px;
         font-size: max(10vw, 55px);
     }

@@ -3,11 +3,27 @@
     --white-color: #FCFCFC;
     --black-color: #242424;
     --pink-color: #FF34CD;
-    --lightpink-color: #EECCE7;
+    /* --lightpink-color: #EECCE7; */
+    --lightpink-color: #ffb6f0;
     --green-color: #CDFB51;
     --blue-color: #71A0D3;
-    --primary-font: "Montserrat", sans-serif;
-    --secondary-font: Helvetica ,Arial, sans-serif;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Helvetica-Neue' ,Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(./fonts/HelveticaNeueHeavy.otf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-semi';
+    src: url(./fonts/Montserrat-Bold.ttf);
 }
  
 html,body {

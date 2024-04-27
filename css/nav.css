@@ -21,17 +21,20 @@ header nav {
         cursor: default;
     }
 
-    header nav a .logo {            
+    header nav a .logo {  
+        display: inline-flex;   
     height: 50px;
     margin-left: 2rem;
     background-size: cover;
     padding-right: 5px;
     cursor: pointer;
+    transition: transform .2s ease;
 }
 
 header nav a .logo:hover{
+    transform: scale(1.02);
     background-image: url(../img/logo_rosa.svg);
-    background-position: 6px 0;
+    background-position: 4px 0;
     background-repeat: no-repeat;
     background-size: contain;
     padding-right: 5px;
@@ -102,7 +105,7 @@ header nav ul li a:hover::before {
     width: 100%; /* Expandir el subrayado de izquierda a derecha */
     opacity: 1;
     height: 40px;
-    top: 0;
+    top: 1px;
 }
 
 header nav ul li a::after {

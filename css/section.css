@@ -54,11 +54,11 @@ main{
 
 .about .about_description {
     margin-top: 8rem;
+    font-family: var(--secondary-font);
     width: 100%;
-    font-size: 2.4rem;
-    font-weight: 400;
+    font-size: 3rem;
     line-height: 3.4rem;;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -280,6 +280,7 @@ main{
 .experience {
     position: relative;
     background-color: var(--blue-color);
+    
 }
 
 .experience h3 {
@@ -288,6 +289,7 @@ main{
     font-weight: 900;
     font-family: var(--secondary-font);
     color: var(--white-color);
+    padding-top: 50px;
     /* outline: solid 1px red; */
 }
 
@@ -318,9 +320,9 @@ main{
 }
 
 .experience-left p {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 34px;
     text-align: left;
 }
@@ -367,7 +369,7 @@ main{
 }
 
 .experience-right p {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;;
@@ -506,6 +508,7 @@ main{
 .community p{
     position: relative;
     color: var(--white-color);
+    font-family: var(--primary-font);
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -695,6 +698,7 @@ main{
     display: block;
     margin-bottom: 5px;
     color: var(--black-color);
+    font-family: var(--primary-font);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -708,7 +712,7 @@ main{
     box-sizing: border-box;
     border: none;
     border-radius: 10px 10px 0 0;
-    background-color: #e5bedc;
+    background-color: #ffc8f2;
     border-bottom: 2px solid var(--black-color);
     font-size: 25px;
     outline: none;      /*no aparece el border cuando se seleciona*/
@@ -720,7 +724,7 @@ main{
     margin-bottom: 10px;
     border: none;
     border-radius: 10px;
-    background-color: #e5bedc;
+    background-color: #ffc8f2;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -730,7 +734,7 @@ main{
     border: 2px solid transparent;
     border-bottom: 2px solid var(--black-color);
     border-radius: 10px 10px 0 0;
-    background-color: #e5bedc;
+    background-color: #ffc8f2;
     box-sizing: content;
     height: 80px;
     max-height: 160px;
@@ -755,6 +759,7 @@ main{
 .contact input[type="checkbox"] {
     height: 20px;
     width: 20px;
+    margin-right: 20px;
     background-color: #eeb6e3;
 }
 
@@ -943,12 +948,12 @@ footer .container-right .contact-us h5 {
     text-align: left;
     color: var(--white-color);
     margin: 0;
+    margin-left: 14px;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
-
     /* estilos heredados no se de donde */
     list-style-type: disc;
     margin-block-start: 2rem;
@@ -973,7 +978,7 @@ footer .contact-us-wrapper p, footer .contact-us-wrapper li a {
     font-size: 1.6rem;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 990px){
+@media only screen and (min-width: 578px) and (max-width: 990px){
 
     footer{
             flex-direction: column;
@@ -1047,7 +1052,7 @@ footer .contact-us-wrapper p, footer .contact-us-wrapper li a {
     }
         
     footer .container-right .social {
-            margin-left: 0;
+            margin-left: 14px;
             width: 100%;
             flex-direction: column;
             justify-content: flex-start;
