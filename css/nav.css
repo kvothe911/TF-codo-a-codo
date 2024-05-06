@@ -17,12 +17,12 @@ header nav {
 
     /*-------imagen del logo-------*/
 
-    header nav a {
+header nav a {
         cursor: default;
-    }
+}
 
-    header nav a .logo {  
-        display: inline-flex;   
+header nav a .logo {  
+    display: inline-flex;   
     height: 50px;
     margin-left: 2rem;
     background-size: cover;
@@ -33,7 +33,7 @@ header nav {
 
 header nav a .logo:hover{
     transform: scale(1.02);
-    background-image: url(../img/logo_rosa.svg);
+    background-image: url(../img/logo_rosa.avif);
     background-position: 4px 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -213,6 +213,7 @@ header .menu-btn {
 
     #head-sidebar {
         position: fixed;
+        padding-top: 20px;
         background: transparent;
         height: 100%;
         width: 300px;
@@ -229,7 +230,7 @@ header .menu-btn {
         z-index: 400;
     }
 
-    #head-sidebar>a{
+    /* #head-sidebar>a{
         position: fixed;
         z-index: 300;
         background: var(--blue-color);
@@ -239,16 +240,11 @@ header .menu-btn {
         padding-bottom: 20px;
         top: 0px;
         left: 0px;
-    } 
+    }  */
     
     #btn:checked ~ #head-sidebar>a {
         position: relative;
-        left: auto;
-        right: 0;
         padding-right: 70px;
-        padding-left: 0;
-        padding-bottom: 0;
-        background-color: var(--pink-color);
     } 
 
 
@@ -261,6 +257,7 @@ header .menu-btn {
 
     #head-sidebar ul {
         position: absolute;
+        padding-top: 20px;
         top: 100px;
         left: 30px;
         font-size: 24px;
@@ -359,24 +356,21 @@ header .menu-btn {
         right: -600px;
     }
 
-    #head-sidebar>a {
-        position: fixed;
-        background: var(--blue-color);
+     #head-sidebar>a {
+        position: absolute;
+        justify-content: flex-start;
+        /* position: fixed;
+        background: var(--blue-color); */
         padding-left: 30px;
-        padding-right: 90vw;
-        padding-top: 20px;
+        /* padding-right: 90vw; */
         padding-bottom: 10px;
-        top: 0px;
-        left: -30px;
-        transition: all .3s ease;
+        top: 20px;
+        left: -2rem; 
+        transition: all .3s ease; 
     }
-
+    
     #btn:checked ~ #head-sidebar>a {
-        position: fixed;
-        left: 0px;
-        padding-bottom: 10px;
-        /* transform: translateY(-20vh); */
-        background-color: var(--pink-color);
+        position: absolute;
     }
 
     #head-sidebar ul {

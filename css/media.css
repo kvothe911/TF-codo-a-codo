@@ -1,7 +1,7 @@
 
           /*  HERO  */
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1200px) {
 
     body {
         overflow-x: hidden;
@@ -30,7 +30,7 @@
         position: relative;
         color: var(--green-color);
         margin-top: 0px;
-        font-size: max(10vw, 55px);
+        font-size: max(6.5vw, 55px);
     }
 
     .brand .identity a {
@@ -46,7 +46,7 @@
     .container .lata {
         top: 15%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-48%);
         max-width: 900px;
         min-width: 500px;
         height: 80vh;

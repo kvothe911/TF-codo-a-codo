@@ -57,7 +57,7 @@ main{
     font-family: var(--secondary-font);
     width: 100%;
     font-size: 3rem;
-    line-height: 3.4rem;;
+    line-height: 4rem;;
     text-align: center;
 }
 
@@ -316,7 +316,7 @@ main{
     font-family: var(--secondary-font);
     font-size: 60px;
     font-weight: 800;
-    text-align:left;
+    text-align: left;
 }
 
 .experience-left p {
@@ -372,7 +372,7 @@ main{
     font-family: var(--primary-font);
     font-size: 24px;
     font-weight: 500;
-    line-height: 34px;;
+    line-height: 34px;
     text-align: left;
 }
 
@@ -405,7 +405,7 @@ main{
     .experience-left p, .experience-right p{
         font-size: max(2vw, 24px);
         font-weight: 400;
-        line-height: 3rem;;
+        line-height: 3.5rem;;
         text-align: left;
     }
 
@@ -434,6 +434,7 @@ main{
     }
 
     .experience-left h4, .experience-right h4   {
+        margin-top: 0;
         font-size: 3.5rem;
     }
 
@@ -482,8 +483,9 @@ main{
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 770px){
     .experience h3 {
+        padding-top: 0;
         font-size: 4.5rem;
     }
 }
@@ -760,7 +762,6 @@ main{
     height: 20px;
     width: 20px;
     margin-right: 20px;
-    background-color: #eeb6e3;
 }
 
 .contact button {
@@ -881,8 +882,8 @@ footer{
 
 footer .container-left{
     margin: 0;
-    width: 50%;
-    padding-right: 2rem;
+    width: 40%;
+    /* padding-right: 2rem; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -895,11 +896,11 @@ footer .container-left img {
 
 footer .container-right {
     margin: 0;
-    width: 50%;
+    width: 60%;
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 footer .container-right .social {
@@ -1002,17 +1003,18 @@ footer .contact-us-wrapper p, footer .contact-us-wrapper li a {
     footer .container-right {
             margin: 0;
             width: 100%;
-            justify-content: center;
+            justify-content: space-around;
     }
         
     footer .container-right .social {
-            margin-left: 0;
+            margin-left: 50px;
             width: 40%;
     }
         
         
     footer .social-links {
-            width: 60%;
+        padding-left: 3px;
+            width: 150px;
     }
         
     footer .container-right .contact-us {
@@ -1080,5 +1082,8 @@ footer .contact-us-wrapper p, footer .contact-us-wrapper li a {
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+    }
+    footer .contact-us-wrapper p{
+        margin: 0;
     }
 }
