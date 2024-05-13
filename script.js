@@ -3,7 +3,7 @@ const email = document.querySelectorAll('#email')
 const message = document.getElementById('message')
 const btnJoin = document.getElementById('btn-join')
 const btnContact = document.getElementById('btn-contact')
-const resultJoin = document.querySelectorAll('#result')
+const result = document.querySelectorAll('#result')
 
 btnJoin.addEventListener('click', (e)=>{
     e.preventDefault()  
