@@ -72,3 +72,12 @@ body {
     border-radius: 40px;
     padding: 10px 20px;
 }
+
+@media only screen and  (max-width: 990px){
+    .red, .green{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+}
