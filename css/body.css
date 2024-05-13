@@ -168,10 +168,7 @@
   
   ::-webkit-scrollbar-thumb {
     background: var(--green-color); /* Color de la barra de desplazamiento */
-    
     cursor: default;
   }
   
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--green-color); /* Color de la barra de desplazamiento al hacer hover */
-  }
+  
