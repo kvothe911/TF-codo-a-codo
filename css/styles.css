@@ -25,6 +25,10 @@
     font-family: 'Montserrat-semi';
     src: url(./fonts/Montserrat-Bold.ttf);
 }
+
+html{
+    scroll-behavior: smooth;
+}
  
 html,body {
     margin: 0;
